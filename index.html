@@ -4,17 +4,332 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="deploy your website">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <title>Professional Website Project</title>
 </head>
 <body>
-
-<script src="js/main.js">
+<header>
+  <nav class="nav collapsible">
+    <a href="/"><svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="orange" />
+    </svg></a>
+     <!-- <a href="/"><img src="images/logo.svg" alt=""></a> -->
+     <svg class="icon icon--white nav__toggler">
+      <use :href="images/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list nav__list collapsible__content">
+      <li class="nav__item"><a href="#">Hosting</a></li>
+      <li class="nav__item"><a href="#">VPS</a></li>
+      <li class="nav__item"><a href="#">Domain</a></li>
+      <li class="nav__item"><a href="#">Pricing</a></li>
+    </ul>
+   </nav>
+</header>
+<section class="block block--dark block--scked-left hero">
+  <div class="container grid grid--cols-2">
+    <header class=" block__header hero__content" data-aos="zoom-in-down">
+      <h1 class="block__heading">HTML Learning Club</h1>
+      <p class="hero__tegline">Lorem ipsum dolor sit amet.</p>
+      <a href="" class="btn btn--accent btn--stretched">Get Strated</a>
+    </header>
+    <picture data-aos="zoom-in-down">
+      <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x"/>
+      <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x"/>
+    <img class="hero__image" src="images/banner.png" alt="">
+    </picture>
+  </div>
+</section>
+<section class="block container block--domain" data-aos="fade-up">
+  <header class="block__header">
+   <h2>Lorem ipsum dolor sit amet.</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, doloremque?</p>
+   <p></p>
+  </header>
+  <div class="input-group">
+    <input type="text" placeholder="Enter domain name here" class="input">
+  <button class="btn btn--accent"><svg class="icon icon--white">
+    <use :href="images/sprite.svg#search"></use>
+  </svg>Search</button>
+  </div>
+  <ul class="list block-domian__prices">
+    <li><span class="badge badge--secondary">.ccc $8</span></li>
+    <li>.com 7$</li>
+    <li>.sg $9</li>
+    <li>.space $45</li>
+    <li>.info $20</li>
+    <li>.net $20</li>
+  </ul>
+</section>
+<section class='block container block-plans' data-aos="fade-up">
+  <div class="grid grid--cols-3">
+    <div class="plan">
+      <div class="card card--secondary">
+        <header class="card__header"><h3 class="plan__name">Entry</h3>
+          <span class="plan__price">$17</span>
+          <span class="plan__billing-cycle">/month</span>
+          <span class="badge badge--secondary badge--small">20% off</span>
+          <span class="plan__description">Lorem ipsum dolor sit amet.</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem, ipsum dolor.</li>
+              <li class="list__item">Lorem, ipsum.</li>
+            </ul>
+            <button class="btn btn--block btn--outline">Buy Now</button>
+          </div>
+      </div>
+    </div>
+    <div class="plan plan--popular">
+      <div class="card card--primary">
+        <header class="card__header"><h3 class="plan__name">Entry</h3>
+          <span class="plan__price">$17</span>
+          <span class="plan__billing-cycle">/month</span>
+          <span class="badge badge--primary badge--small">20% off</span>
+          <span class="plan__description">Lorem ipsum dolor sit amet.</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem, ipsum dolor.</li>
+              <li class="list__item">Lorem, ipsum.</li>
+            </ul>
+            <button class="btn btn--block btn--outline">Buy Now</button>
+          </div>
+      </div>
+    </div>
+    <div class="plan">
+      <div class="card card--secondary">
+        <header class="card__header"><h3 class="plan__name">Entry</h3>
+          <span class="plan__price">$17</span>
+          <span class="plan__billing-cycle">/month</span>
+          <span class="badge badge--secondary badge--small">20% off</span>
+          <span class="plan__description">Lorem ipsum dolor sit amet.</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem, ipsum dolor.</li>
+              <li class="list__item">Lorem, ipsum.</li>
+            </ul>
+            <button class="btn btn--block btn--outline">Buy Now</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="block container">
+  <header class="block__header">
+    <h2>Lorem ipsum dolor sit amet consectetur.
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, architecto.</p>
+  </header>
+   <artical class="grid grid--cols-2 feature">
+     <div class="feature__content" data-aos="fade-left">
+       <span class="icon-container">
+         <svg class="icon icon--primary">
+           <use :href="images/sprite.svg#easy"></use>
+         </svg>
+       </span>
+       <h3 class="feature__heading">Lorem ipsum dolor sit.
+       </h3>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque nulla iste aperiam, at consectetur optio culpa ex ipsum ut.</p>
+ <a href="#" class="link-arrow">Learn More</a>
+ </div>
+ <picture data-aos="zoom-in-left">
+   <source type="imgage/webp srcset="images/easy.webp 1x,images/easy@2x.webp 2x"/>
+   <source type="imgage/png srcset="images/easy.png 1x,images/easy@2x.png 2x"/>
+ <img class="feature__image"src="images/easy@2x.png" alt="">
+ </picture>
+   </artical>
+   <artical class="grid grid--cols-2 feature">
+     <div class="feature__content">
+       <span class="icon-container">
+         <svg class="icon icon--primary">
+           <use :href="images/sprite.svg#computer"></use>
+         </svg>
+       </span>
+       <h3 class="feature__heading">Lorem ipsum dolor sit.
+       </h3>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque nulla iste aperiam, at consectetur optio culpa ex ipsum ut.</p>
+ <a href="#" class="link-arrow">Learn More</a>
+ </div>
+ <picture>
+   <source type="imgage/webp srcset="images/fast.webp 1x, images/fast@2x.webp 2x"/>
+   <source type="imgage/png srcset="images/fast.png 1x, images/fast@2x.png 2x"/>
+ <img class="feature__image" src="images/fast@2x.png" alt="">
+ </picture>
+   </artical>
+  </div>
+ <section class="block block--dark block--scked-rigth block-showcase">
+  <header class="block__header">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+  </header>
+  <div class="container grid grid--cols-2">
+    <picture class="block-showcase__image">
+      <!-- <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"/> -->
+      <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x"/>
+    <img  src="images/ipad@2x.png" alt="" data-aos="fade-right">
+    </picture>
+    <ul class="list" data-aos="fade-left">
+      <li>
+        <div class="media">
+          <div class="media__image">
+              <svg class="icon icon--primary">
+                <use :href="images/sprite.svg#snap"></use>
+              </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Easy Start & Manage Updates </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae inventore doloremque laboriosam nisi nihil natus, libero voluptatum vero vel quidem?</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="media__image">
+              <svg class="icon icon--primary">
+                <use :href="images/sprite.svg#growth"></use>
+              </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Lorem ipsum dolor sit amet. </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae inventore doloremque laboriosam nisi nihil natus, libero voluptatum vero vel quidem?</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="media__image">
+              <svg class="icon icon--primary">
+                <use :href="images/sprite.svg#wordpress"></use>
+              </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Lorem ipsum dolor sit. </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae inventore doloremque laboriosam nisi nihil natus, libero voluptatum vero vel quidem?</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="block" data-aos="zoom-in">
+  <header class="block__header">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate unde dolore facere amet eaque esse rerum, quibusdam debitis inventore? Laborum.</p>
+  </header>
+  <div class="containre">
+    <div class="card testimonial">
+      <div class="grid grid--cols-2">
+        <div class="testimonial__image"><img src="/images/testimonial.jpg" alt="smiling customer">
+          <span class="icon-container icon-container--accent">
+            <svg class="icon--small icon--white">
+              <use :href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda voluptatem maxime obcaecati iusto vitae ullam. Illum est eveniet provident quisquam.</p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use :href="images/sprite.svg#line"></use>
+                  </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote-author">John Smith </h3>
+                <p class="quote__company">CCC Company</p>
+              </div>
+            </div>
+          </footer>  
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="block block--dark footer">
+  <div class="container grid footer__sections">
+    <section class="collapsible collapsible--expanded footer__section">
+      <div class="collapsible__header">
+        <h2 class="collapsible__heading footer__heading">Item 1</h2>
     
+          <svg class="icon icon--white collapsible__chevron">
+            <use :href="images/sprite.svg#chevron"></use>
+          </svg>
+       
+        </div>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a>
+          </li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="collapsible footer__section ">
+      <div class="collapsible__header">
+        <h2 class="collapsible__heading footer__heading">Item 1</h2>
+    
+          <svg class="icon icon--white collapsible__chevron">
+            <use :href="images/sprite.svg#chevron"></use>
+          </svg>
+       
+      </div>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a>
+          </li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="collapsible footer__section ">
+      <div class="collapsible__header">
+        <h2 class="collapsible__heading  footer__heading">Item 1</h2>
+    
+          <svg class="icon icon--white collapsible__chevron">
+            <use :href="images/sprite.svg#chevron"></use>
+          </svg>
+       
+      </div>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Lorem, ipsum.</a></li>
+          <li><a href="#">Lorem, ipsum.</a>
+          </li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="footer__brand">
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="orange" />
+      </svg>
+      
+      <!-- <img src="images/log.svg" alt=""> -->
+      <p class="footer__copyright">Copyrigth 2020</p>
+    </div>
+  </div>
+</footer>
+<script src="./js/main.js">
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
