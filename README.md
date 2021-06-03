@@ -13,7 +13,7 @@ https://mydemowebsite1.netlify.app
 
 * Animation on Scroll Library (AOS).
 
-* HTML and CSS valiation.
+* HTML and CSS validation.
 
 * Measured the Site's Performance Using Google Lighthouse.
 
