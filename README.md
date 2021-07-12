@@ -1,5 +1,5 @@
-# **Demo Website-1**
-Showcase.
+# **Demo Website**
+Showcase. 
 ### Build and Deployment ###
 The website is built using :boom:**parcel** :boom:
 
