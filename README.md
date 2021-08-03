@@ -4,7 +4,7 @@ Showcase.
 The website is built using :boom:**parcel** :boom:
 
 The website is deployed on :point_right:**Netlify**
-https://mydemowebsite1.netlify.app
+https://learning-club.netlify.app
 ### Techniques Applied to the Website ###
 * Mobile First Web Design.
 
