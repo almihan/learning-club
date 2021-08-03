@@ -1,11 +1,13 @@
-# **Demo Website**
-Showcase. 
-### Build and Deployment ###
-The website is built using :boom:**parcel** :boom:
+<br>
 
-The website is deployed on :point_right:**Netlify**
+### Build and Deployment ###
+The project is built using :boom:**parcel** :boom:
+
+The project is deployed at :point_right:**Netlify**
 https://learning-club.netlify.app
-### Techniques Applied to the Website ###
+***
+
+### Techniques and Tools ###
 * Mobile First Web Design.
 
 * CSS Sprites for Optimization.
